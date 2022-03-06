@@ -2,11 +2,11 @@
 #include <cmath>
 
 float func(float x) {
-    return x*x*x-3*x*x+12*x-9;
+    return x*x+4*std::sin(x);
 }
 
 float funcFirst(float x) {
-    return 3*x*x-6*x+12;
+    return 2*x+4*std::cos(x);
 }
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
 
     accuracy = 0.0000001;
 
-    M = 21;//3;
+    M = -5.66;//3;
 
     initialApproximation = -1;//-1;
 
