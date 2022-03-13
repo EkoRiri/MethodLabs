@@ -5,14 +5,14 @@
 #include <cmath>
 
 float func(float x) {
-    return 5*x-8*std::log(x)-8;
+    return std::exp(5-8/x);//5*x-8*std::log(x)-8
 }
 
 int main() {
     float accuracy = 0.001;
 
     float first = 0.1;
-    float second = func(first);
+    float second = 2;
 
     while ((std::abs(second - first)) > accuracy) {
         first = second;
